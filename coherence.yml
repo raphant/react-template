@@ -1,0 +1,14 @@
+frontend:
+  type: frontend
+  index_file_name: index.html
+  url_path: /
+  repo_path: frontend
+  assets_path: build
+  local_packages: ["/app/node_modules"]
+  install: ["npm", "install"]
+  build: ["npm", "run", "build"]
+  dev: ["PORT=3001 npm", "start"]
+  
+  system:
+    dev:
+      port: 3001
